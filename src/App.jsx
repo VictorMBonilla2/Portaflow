@@ -6,6 +6,51 @@ import ImageViewer from './ImageViewer';
 import Cards from './Cards';
 import ExpandModal from './ExpandModal';
 import OtherProject from './OtherProject';
+import imgHTML from './assets/HTML.png';
+import codePicture from './assets/codePicture.png';
+import imgCSS from './assets/CSS.png';
+import imgJS from './assets/Rectangle 3.png';
+import imgReact from './assets/Rectangle 3-3.png';
+import imgNode from './assets/Rectangle 3 (1).png';
+import imgExpress from './assets/Rectangle 3-5.png';
+import imgJava from './assets/Rectangle 3-1.png';
+import imgSpring from './assets/Rectangle 3-2.png';
+import imgJPA from './assets/Rectangle 3-4.png';
+import imgSelenium from './assets/Rectangle 3-6.png';
+import imgHome from './assets/cotranderApp/Home.png';
+import imgLogin from './assets/cotranderApp/Login.png';
+import imgPersonalConfig from './assets/cotranderApp/personal ocnfig.png';
+import imgSubirMov from './assets/cotranderApp/SubirMovilizacion.png';
+import imgStats from './assets/cotranderApp/Estadisticas.png';
+import img00 from './assets/link/00.png';
+import img0 from './assets/link/0.png';
+import img1 from './assets/link/1.png';
+import img2 from './assets/link/2.png';
+import img3 from './assets/link/3.png';
+import img4 from './assets/link/4.png';
+import img5 from './assets/link/5.png';
+import img6 from './assets/link/6.png';
+import home from './assets/Estacionamiento/Home.png';
+import homeAprendiz from './assets/Estacionamiento/Home aprendiz.png';
+import historial from './assets/Estacionamiento/Historial.png';
+import gestorVehiculo from './assets/Estacionamiento/GestorVehiculo.png';
+import estacionamientoAlgunos from './assets/Estacionamiento/EstacionamientoAlgunos.png';
+import estacionamientoLibre from './assets/Estacionamiento/Estacionamiento libre.png';
+import ajustarEspacio from './assets/Estacionamiento/AjustarEspacio.png';
+import reportarEspacio from './assets/Estacionamiento/ReportarEspacio.png';
+import liberarEspacio from './assets/Estacionamiento/LiberarEspacio.png';
+import infoEspacio from './assets/Estacionamiento/InfoEspacio.png';
+import reportes from './assets/Estacionamiento/Reportes.png';
+import detallesReporte from './assets/Estacionamiento/DetallesReporte.png';
+import perfil from './assets/Estacionamiento/Perfil.png';
+import usuarios from './assets/Estacionamiento/Usuarios.png';
+import usuariosNew from './assets/Estacionamiento/Usuarios-New.png';
+import usuariosEdit from './assets/Estacionamiento/Usuarios-Edit.png';
+import configSistema from './assets/Estacionamiento/Config Sitema.png';
+import configSectores from './assets/Estacionamiento/Config Sectores.png';
+import editDocumentos from './assets/Estacionamiento/Edit Documentos.png';
+import editarVehiculos from './assets/Estacionamiento/Editar Vehiculos.png';
+import coding1 from './assets/Coding_1_.svg';
 
 
 
@@ -41,18 +86,19 @@ function App() {
 
 
 
-  const technologies = [
-    { name: 'HTML', img: "src/assets/HTML.png", color: '#e34f26' },
-    { name: 'CSS', img: "src/assets/CSS.png", color: '#1572b6' },
-    { name: 'Javascript', img: "src/assets/Rectangle 3.png", color: '#f7df1e' },
-    { name: 'React', img: "src/assets/Rectangle 3-3.png", color: '#61dafb' },
-    { name: 'Node Js', img: "src/assets/Rectangle 3 (1).png", color: '#68a063' },
-    { name: 'express', img: "src/assets/Rectangle 3-5.png", color: '#000000' },
-    { name: 'Java', img: "src/assets/Rectangle 3-1.png", color: '#e76e07' },
-    { name: 'Spring Boot', img: "src/assets/Rectangle 3-2.png", color: '#6db33f' },
-    { name: 'JPA + Hibernate', img: "src/assets/Rectangle 3-4.png", color: '#59666c' },
-    { name: 'Selenium', img: "src/assets/Rectangle 3-6.png", color: '#00b400' },
-  ];
+const technologies = [
+  { name: 'HTML', img: imgHTML, color: '#e34f26' },
+  { name: 'CSS', img: imgCSS, color: '#1572b6' },
+  { name: 'Javascript', img: imgJS, color: '#f7df1e' },
+  { name: 'React', img: imgReact, color: '#61dafb' },
+  { name: 'Node Js', img: imgNode, color: '#68a063' },
+  { name: 'express', img: imgExpress, color: '#000000' },
+  { name: 'Java', img: imgJava, color: '#e76e07' },
+  { name: 'Spring Boot', img: imgSpring, color: '#6db33f' },
+  { name: 'JPA + Hibernate', img: imgJPA, color: '#59666c' },
+  { name: 'Selenium', img: imgSelenium, color: '#00b400' },
+];
+
 
 
   const estadoStrings = {
@@ -72,12 +118,13 @@ function App() {
       detallesDescripcion: "Actualmente el proyecto se encuentra en manos de la cooperativa, continuando su desarrollo",
       tags: ["React", "Java", "Spring Boot", "JPA + Hibernate", "MySQL", "Docker"],
       imagenes: [
-        "src/assets/cotranderApp/Home.png",
-        "src/assets/cotranderApp/Login.png",
-        "src/assets/cotranderApp/personal ocnfig.png",
-        "src/assets/cotranderApp/SubirMovilizacion.png",
-        "src/assets/cotranderApp/Estadisticas.png"
+        imgHome,
+        imgLogin,
+        imgPersonalConfig,
+        imgSubirMov,
+        imgStats
       ],
+
       links: [
         { label: "GitHub", url: "https://github.com/VictorMBonilla2/CotranderWeb", icon: Github, bg: "bg-gray-700" },
       ]
@@ -89,12 +136,17 @@ function App() {
       estadoProyecto: estadoStrings.preLanzamiento,
       tags: ["React", "Vite", "Tailwind", "Node Js", "express", "mongoose", "MongoDB"],
       detallesDescripcion: "En busqueda de un hosting",
-      imagenes: ["src/assets/link/00.png",
-        "src/assets/link/0.png", "src/assets/link/1.png", "src/assets/link/2.png",
-        "src/assets/link/3.png", "src/assets/link/4.png",
-        "src/assets/link/5.png", "src/assets/link/6.png",
-
+      imagenes: [
+        img00,
+        img0,
+        img1,
+        img2,
+        img3,
+        img4,
+        img5,
+        img6,
       ],
+
       links: [
         { label: "GitHub", url: "https://github.com/VictorMBonilla2/LinkChest", icon: Github, bg: "bg-gray-700" },
         { label: "Web", url: "https://site.com", icon: Globe, bg: "bg-green-600" },
@@ -113,26 +165,29 @@ Además, incluye una sección de configuración del sistema que permite personal
       estadoProyecto: estadoStrings.finalizado,
       tags: ["HTML", "CSS", "JavaScript", "Java", "JSP", "JPA", "MySQL"],
       detallesDescripcion: "En busqueda de un hosting",
-      imagenes: ["src/assets/Estacionamiento/Home.png", "src/assets/Estacionamiento/Home aprendiz.png",
-        "src/assets/Estacionamiento/Historial.png",
-        "src/assets/Estacionamiento/GestorVehiculo.png",
-        "src/assets/Estacionamiento/EstacionamientoAlgunos.png",
-        "src/assets/Estacionamiento/Estacionamiento libre.png",
-        "src/assets/Estacionamiento/AjustarEspacio.png",
-        "src/assets/Estacionamiento/ReportarEspacio.png",
-        "src/assets/Estacionamiento/LiberarEspacio.png",
-        "src/assets/Estacionamiento/InfoEspacio.png",
-        "src/assets/Estacionamiento/Reportes.png",
-        "src/assets/Estacionamiento/DetallesReporte.png",
-        "src/assets/Estacionamiento/Perfil.png",
-        "src/assets/Estacionamiento/Usuarios.png",
-        "src/assets/Estacionamiento/Usuarios-New.png",
-        "src/assets/Estacionamiento/Usuarios-Edit.png",
-        "src/assets/Estacionamiento/Config Sitema.png",
-        "src/assets/Estacionamiento/Config Sectores.png",
-        "src/assets/Estacionamiento/Edit Documentos.png",
-        "src/assets/Estacionamiento/Editar Vehiculos.png",
-      ],
+imagenes: [
+  home,
+  homeAprendiz,
+  historial,
+  gestorVehiculo,
+  estacionamientoAlgunos,
+  estacionamientoLibre,
+  ajustarEspacio,
+  reportarEspacio,
+  liberarEspacio,
+  infoEspacio,
+  reportes,
+  detallesReporte,
+  perfil,
+  usuarios,
+  usuariosNew,
+  usuariosEdit,
+  configSistema,
+  configSectores,
+  editDocumentos,
+  editarVehiculos,
+],
+
       links: [
         { label: "GitHub", url: "https://github.com/VictorMBonilla2/JSP_proyecto_cascos", icon: Github, bg: "bg-gray-700" },
       ]
@@ -214,7 +269,7 @@ Además, incluye una sección de configuración del sistema que permite personal
 
           <div>
             <div className="w-120 h-120 bg-white rounded-full">
-              <img src="src/assets/Coding_1_.svg" className="w-full h-full object-contain" />
+              <img src={coding1} className="w-full h-full object-contain" />
             </div>
           </div>
 
@@ -256,7 +311,7 @@ Además, incluye una sección de configuración del sistema que permite personal
               </div>
               <div className={`rounded-2xl overflow-hidden ${isDark ? 'shadow-2xl shadow-cyan-500/10' : 'shadow-2xl shadow-blue-200/50'
                 }`}>
-                <img src="src/assets/codePicture.png" alt="Workspace" className="w-full h-full object-cover" />
+                <img src={codePicture} alt="Workspace" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
