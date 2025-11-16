@@ -165,28 +165,28 @@ Además, incluye una sección de configuración del sistema que permite personal
       estadoProyecto: estadoStrings.finalizado,
       tags: ["HTML", "CSS", "JavaScript", "Java", "JSP", "JPA", "MySQL"],
       detallesDescripcion: "En busqueda de un hosting",
-imagenes: [
-  home,
-  homeAprendiz,
-  historial,
-  gestorVehiculo,
-  estacionamientoAlgunos,
-  estacionamientoLibre,
-  ajustarEspacio,
-  reportarEspacio,
-  liberarEspacio,
-  infoEspacio,
-  reportes,
-  detallesReporte,
-  perfil,
-  usuarios,
-  usuariosNew,
-  usuariosEdit,
-  configSistema,
-  configSectores,
-  editDocumentos,
-  editarVehiculos,
-],
+      imagenes: [
+        home,
+        homeAprendiz,
+        historial,
+        gestorVehiculo,
+        estacionamientoAlgunos,
+        estacionamientoLibre,
+        ajustarEspacio,
+        reportarEspacio,
+        liberarEspacio,
+        infoEspacio,
+        reportes,
+        detallesReporte,
+        perfil,
+        usuarios,
+        usuariosNew,
+        usuariosEdit,
+        configSistema,
+        configSectores,
+        editDocumentos,
+        editarVehiculos,
+      ],
 
       links: [
         { label: "GitHub", url: "https://github.com/VictorMBonilla2/JSP_proyecto_cascos", icon: Github, bg: "bg-gray-700" },
@@ -259,7 +259,7 @@ imagenes: [
                 <Linkedin className={`w-6 h-6 ${isDark ? 'text-cyan-400' : 'text-blue-600'}`} />
               </IconHero>
               <IconHero>
-                <div onClick={() => copiarCorreo("aguapanela23")}>
+                <div onClick={() => copiarCorreo("lossg2234@gmail.com")}>
                   <Mail className={`w-6 h-6 cursor-pointer ${isDark ? 'text-cyan-400' : 'text-blue-600'}`} />
                 </div>
               </IconHero>
@@ -417,7 +417,7 @@ imagenes: [
                 <Linkedin className={`w-6 h-6 transition-colors ${isDark ? 'text-slate-400 hover:text-cyan-400' : 'text-slate-500 hover:text-blue-600'}`}/>
               </IconHero>
               <IconHero>
-                <div onClick={() => copiarCorreo("aguapanela23")}>
+                <div onClick={() => copiarCorreo("lossg2234@gmail.com")}>
                   <Mail className={`w-6 h-6 cursor-pointer transition-colors ${isDark ? 'text-slate-400 hover:text-cyan-400' : 'text-slate-500 hover:text-blue-600'}`}/>
                 </div>
               </IconHero>
