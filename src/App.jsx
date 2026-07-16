@@ -50,6 +50,8 @@ import configSistema from './assets/Estacionamiento/Config Sitema.png';
 import configSectores from './assets/Estacionamiento/Config Sectores.png';
 import editDocumentos from './assets/Estacionamiento/Edit Documentos.png';
 import editarVehiculos from './assets/Estacionamiento/Editar Vehiculos.png';
+import kaf from './assets/kafkaf.png';
+import elasticImage from './assets/elasticsearch.png'
 import coding1 from './assets/Coding_1_.svg';
 
 
@@ -87,16 +89,18 @@ function App() {
 
 
 const technologies = [
-  { name: 'HTML', img: imgHTML, color: '#e34f26' },
-  { name: 'CSS', img: imgCSS, color: '#1572b6' },
-  { name: 'Javascript', img: imgJS, color: '#f7df1e' },
-  { name: 'React', img: imgReact, color: '#61dafb' },
-  { name: 'Node Js', img: imgNode, color: '#68a063' },
-  { name: 'express', img: imgExpress, color: '#000000' },
-  { name: 'Java', img: imgJava, color: '#e76e07' },
-  { name: 'Spring Boot', img: imgSpring, color: '#6db33f' },
-  { name: 'JPA + Hibernate', img: imgJPA, color: '#59666c' },
-  { name: 'Selenium', img: imgSelenium, color: '#00b400' },
+  { name: 'HTML',         img: imgHTML, color: '#e34f26' },
+  { name: 'CSS',          img: imgCSS, color: '#1572b6' },
+  { name: 'Javascript',   img: imgJS, color: '#f7df1e' },
+  { name: 'React',        img: imgReact, color: '#61dafb' },
+  { name: 'Node Js',      img: imgNode, color: '#68a063' },
+  { name: 'express',      img: imgExpress, color: '#000000' },
+  { name: 'Java',         img: imgJava, color: '#e76e07' },
+  { name: 'Spring Boot',  img: imgSpring, color: '#6db33f' },
+  { name: 'JPA + Hibernate',  img: imgJPA, color: '#59666c' },
+  { name: 'Selenium',         img: imgSelenium, color: '#00b400' },
+  { name: 'ElasticSearch',    img:elasticImage,  color: '#3EBEB0'},
+  { name: 'Kafka',          img: kaf, color: '#000000'}
 ];
 
 
@@ -128,6 +132,16 @@ const technologies = [
       links: [
         { label: "GitHub", url: "https://github.com/VictorMBonilla2/CotranderWeb", icon: Github, bg: "bg-gray-700" },
       ]
+    },
+    {
+      titulo: "Crispy ERP",
+      subtitle: "SaaS ERP enfocado en el sector de la belleza",
+      description: ``,
+      estadoProyecto: estadoStrings.preLanzamiento,
+      detallesReporte: "Se encuentra actualmente en desarrollo",
+      imagenes: [
+      ],
+      tags: ["React", "Java", "Spring Boot" , "JPA + Hibernate", "MySQL", "Docker", "Kafka", "ElasticSearch"]
     },
     {
       titulo: "LinkChest",
@@ -423,7 +437,7 @@ Además, incluye una sección de configuración del sistema que permite personal
               </IconHero>
             </div>
             <p className={isDark ? 'text-slate-500' : 'text-slate-600'}>
-            © 2025 VictorMBonilla2.
+            © 2026 VictorMBonilla2.
             </p>
           </div>
         </footer>
